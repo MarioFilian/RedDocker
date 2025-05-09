@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: .
+    ports:
+      - "8080:80"
+    networks:
+      - mi_red
+
+networks:
+  mi_red:
+    external: true
